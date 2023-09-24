@@ -1,0 +1,103 @@
+.sidebar {
+  max-width: 320px;
+  background-color: var(--section-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--frame-color);
+  margin-bottom: 15px;
+}
+.me__avatar {
+  background-color: var(--frame-color);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.me__title {
+  font-size: 28px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.me__position {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  background-color: var(--frame-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.contacts {
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.contacts__list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.contacts__list li:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--frame-color);
+  border-radius: 8px;
+  box-shadow: -1px -1px 5px -2px rgba(255, 255, 255, 1),
+    1px 2px 5px -1px rgba(0, 0, 0, 1);
+}
+
+.contacts__icon,
+.social__icon use {
+  fill: var(--font-color);
+}
+
+.contacts__label {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.contacts__link,
+.contacts__text {
+  font-size: 16px;
+  margin: 0;
+  transition: color var(--transition);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--hover-color);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+}
+.social__icon use {
+  transition: fill var(--transition);
+}
+.social__icon:hover > use,
+.social__icon:focus > use {
+  fill: var(--hover-color);
+}

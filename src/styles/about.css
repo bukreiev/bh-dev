@@ -1,0 +1,85 @@
+/* About */
+
+.title {
+  position: relative;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.title::before {
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--hover-color);
+  position: absolute;
+  top: 110%;
+  content: ' ';
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.text {
+  margin: 0;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+/* What I do */
+
+.directions {
+  margin-bottom: 40px;
+}
+
+.directions__title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.directions__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.directions__list li {
+  border: 2px solid var(--frame-color);
+  border-radius: 8px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+.directions__icon {
+  min-width: 50px;
+}
+
+.directions__icon use {
+  fill: var(--hover-color);
+}
+
+.directions__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.directions__text {
+  margin: 0;
+  font-size: 14px;
+}
