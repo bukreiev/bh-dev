@@ -1,10 +1,10 @@
 import avatar from '../../assets/happy-mem.png';
-import mail from '../../assets/icons.svg';
-import phone from '../../assets/icons.svg';
-import calendar from '../../assets/icons.svg';
-import location from '../../assets/icons.svg';
-import github from '../../assets/icons.svg';
-import linkedin from '../../assets/icons.svg';
+import mail from '../../assets/icons.svg#mail';
+import phone from '../../assets/icons.svg#phone';
+import calendar from '../../assets/icons.svg#calendar';
+import location from '../../assets/icons.svg#location';
+import github from '../../assets/icons.svg#github';
+import linkedin from '../../assets/icons.svg#linkedin';
 
 export default function Sidebar() {
   return (
