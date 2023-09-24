@@ -1,3 +1,6 @@
+import display from '../../assets/icons.svg#display';
+import server from '../../assets/icons.svg#server';
+
 export default function About() {
   return (
     <>
@@ -21,11 +24,7 @@ export default function About() {
         <ul className="directions__list">
           <li>
             <svg className="directions__icon" width={50} height={50}>
-              <use
-                href="/src/assets/icons.svg#display"
-                width={50}
-                height={50}
-              ></use>
+              <use href={display} width={50} height={50}></use>
             </svg>
             <div>
               <h3 className="directions__name">Front-end</h3>
@@ -36,11 +35,7 @@ export default function About() {
           </li>
           <li>
             <svg className="directions__icon" width={50} height={50}>
-              <use
-                href="/src/assets/icons.svg#server"
-                width={50}
-                height={50}
-              ></use>
+              <use href={server} width={50} height={50}></use>
             </svg>
             <div>
               <h3 className="directions__name">Back-end</h3>
