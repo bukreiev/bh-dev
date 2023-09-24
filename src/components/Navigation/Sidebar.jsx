@@ -1,4 +1,10 @@
 import avatar from '../../assets/happy-mem.png';
+import mail from '../../assets/icons.svg';
+import phone from '../../assets/icons.svg';
+import calendar from '../../assets/icons.svg';
+import location from '../../assets/icons.svg';
+import github from '../../assets/icons.svg';
+import linkedin from '../../assets/icons.svg';
 
 export default function Sidebar() {
   return (
@@ -18,13 +24,7 @@ export default function Sidebar() {
         <ul className="contacts__list">
           <li>
             <svg className="contacts__icon">
-              <use
-                href="/src/assets/icons.svg#mail"
-                width={25}
-                height={25}
-                x={12.5}
-                y={12}
-              ></use>
+              <use href={mail} width={25} height={25} x={12.5} y={12}></use>
             </svg>
             <div>
               <p className="contacts__label">EMAIL</p>
@@ -35,13 +35,7 @@ export default function Sidebar() {
           </li>
           <li>
             <svg className="contacts__icon">
-              <use
-                href="/src/assets/icons.svg#phone"
-                width={25}
-                height={25}
-                x={12.5}
-                y={12.5}
-              ></use>
+              <use href={phone} width={25} height={25} x={12.5} y={12.5}></use>
             </svg>
             <div>
               <p className="contacts__label">PHONE</p>
@@ -53,7 +47,7 @@ export default function Sidebar() {
           <li>
             <svg className="contacts__icon">
               <use
-                href="/src/assets/icons.svg#calendar"
+                href={calendar}
                 width={25}
                 height={25}
                 x={12.5}
@@ -68,7 +62,7 @@ export default function Sidebar() {
           <li>
             <svg className="contacts__icon">
               <use
-                href="/src/assets/icons.svg#location"
+                href={location}
                 width={25}
                 height={25}
                 x={12.5}
@@ -85,20 +79,12 @@ export default function Sidebar() {
       <div className="social">
         <a href="https://github.com/bukreiev">
           <svg className="social__icon">
-            <use
-              href="/src/assets/icons.svg#github"
-              width={35}
-              height={35}
-            ></use>
+            <use href={github} width={35} height={35}></use>
           </svg>
         </a>
         <a href="https://www.linkedin.com/in/bukreievh">
           <svg className="social__icon">
-            <use
-              href="/src/assets/icons.svg#linkedin"
-              width={35}
-              height={35}
-            ></use>
+            <use href={linkedin} width={35} height={35}></use>
           </svg>
         </a>
       </div>
