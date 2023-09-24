@@ -1,10 +1,12 @@
+import avatar from '../../assets/happy-mem.png';
+
 export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="me">
         <img
           className="me__avatar"
-          src="/src/assets/happy-mem.png"
+          src={avatar}
           alt="avatar"
           width={200}
           height={200}
