@@ -1,0 +1,166 @@
+.title {
+  position: relative;
+  font-size: 40px;
+  margin-top: 0;
+}
+.section {
+  margin-bottom: 20px;
+}
+.section__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: var(--frame-color);
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline__container {
+  padding: 5px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80%;
+}
+
+/* The circles on the timeline */
+.timeline__container::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -27px;
+  background-color: var(--hover-color);
+  border: 4px solid var(--hover-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right {
+  left: 5%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 15px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(0, 0, 0);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--frame-color) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -10px;
+}
+
+/* The actual content */
+.timeline__content {
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 8px;
+  color: var(--font-color);
+  border: 2px solid var(--frame-color);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+}
+
+.timeline__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.timeline__period {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.timeline__text {
+  margin: 0;
+}
+
+.skills__container {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.skills__list:nth-child(odd) {
+  animation-name: slideone;
+}
+.skills__list:nth-child(even) {
+  animation-name: slidetwo;
+}
+.skills__list:last-child {
+  margin-bottom: 0;
+}
+@keyframes slideone {
+  from {
+    margin-left: 5%;
+  }
+  to {
+    margin-right: 5%;
+  }
+}
+@keyframes slidetwo {
+  from {
+    margin-right: 5%;
+  }
+  to {
+    margin-left: 5%;
+  }
+}
+
+.skills__item {
+  padding: 5px;
+  border: 2px solid var(--frame-color);
+  border-radius: 8px;
+  background: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  text-align: center;
+}
+
+.skills__item:hover,
+.skills__item:focus {
+  scale: 1.1;
+}

@@ -1,31 +1,33 @@
+import { Link } from 'react-router-dom';
+
 export default function Navigation() {
   return (
     <nav className="nav">
       <ul className="nav__list">
         <li>
-          <a className="nav__link" href="#">
+          <Link className="nav__link" to="/about">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="nav__link" href="#">
+          <Link className="nav__link" to="/resume">
             Resume
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="nav__link" href="#">
+          <Link className="nav__link" to="">
             Portfolio
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="nav__link" href="#">
+          <Link className="nav__link" to="">
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="nav__link" href="#">
-            Contacts
-          </a>
+          <Link className="nav__link" to="">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

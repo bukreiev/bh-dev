@@ -4,7 +4,7 @@
 @import url(./styles/blog.css);
 @import url(./styles/resume.css);
 @import url(./styles/portfolio.css);
-@import url(./styles/contacts.css);
+@import url(./styles/contact.css);
 
 :root {
   font-family: 'Montserrat', sans-serif;
@@ -86,6 +86,7 @@ body {
   overflow: hidden;
   background-color: var(--section-color);
   max-width: 810px;
+  width: 810px;
   padding: 20px;
   padding-top: 50px;
   border-radius: 10px;
