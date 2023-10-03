@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 // import About from './components/Navigation/About';
-import Navigation from './components/Navigation/Navigation';
-import Sidebar from './components/Navigation/Sidebar';
+import Navigation from './components/Navigation';
+import Sidebar from './components/Sidebar';
 
 export default function App() {
   return (
