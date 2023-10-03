@@ -1,5 +1,5 @@
-import display from '../../assets/icons.svg#display';
-import server from '../../assets/icons.svg#server';
+import display from '../assets/icons.svg#display';
+import server from '../assets/icons.svg#server';
 
 export default function About() {
   return (

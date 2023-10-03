@@ -1,7 +1,7 @@
-import webstudio from '../../assets/webstudio.png';
-import icecream from '../../assets/icecream.png';
-import filmoteka from '../../assets/filmoteka.png';
-import taskpro from '../../assets/taskpro.png';
+import webstudio from '../assets/webstudio.png';
+import icecream from '../assets/icecream.png';
+import filmoteka from '../assets/filmoteka.png';
+import taskpro from '../assets/taskpro.png';
 
 export default function Portfolio() {
   return (
