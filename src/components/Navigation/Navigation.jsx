@@ -15,7 +15,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li>
-          <Link className="nav__link" to="">
+          <Link className="nav__link" to="/portfolio">
             Portfolio
           </Link>
         </li>

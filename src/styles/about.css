@@ -1,24 +1,7 @@
 /* About */
 
-.title {
-  position: relative;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-.title::before {
-  display: inline-block;
-  width: 80px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: var(--hover-color);
-  position: absolute;
-  top: 110%;
-  content: ' ';
-}
-
 .about {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .text {
@@ -40,13 +23,16 @@
 .directions__title {
   font-size: 22px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .directions__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .directions__list li {
@@ -62,7 +48,6 @@
   padding: 10px 15px;
   display: flex;
   align-items: center;
-
   gap: 20px;
 }
 .directions__icon {
@@ -91,5 +76,5 @@
 .reviews__title {
   font-size: 22px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }

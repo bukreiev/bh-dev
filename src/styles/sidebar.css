@@ -1,9 +1,14 @@
 .sidebar {
-  max-width: 320px;
-  max-height: 650px;
+  box-sizing: border-box;
+  max-width: 480px;
+  max-height: 850px;
   background-color: var(--section-color);
   padding: 20px;
   border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .me {
@@ -21,18 +26,31 @@
 }
 
 .me__title {
-  font-size: 28px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .me__position {
-  font-size: 18px;
+  font-size: 14x;
   margin-top: 0;
   margin-bottom: 20px;
   background-color: var(--frame-color);
   padding: 5px 10px;
   border-radius: 5px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .contacts {

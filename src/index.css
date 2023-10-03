@@ -1,10 +1,10 @@
 @import url(./styles/navigation.css);
 @import url(./styles/sidebar.css);
 @import url(./styles/about.css);
-@import url(./styles/blog.css);
 @import url(./styles/resume.css);
 @import url(./styles/portfolio.css);
-@import url(./styles/contact.css);
+/* @import url(./styles/blog.css); */
+/* @import url(./styles/contact.css); */
 
 :root {
   font-family: 'Montserrat', sans-serif;
@@ -71,23 +71,78 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 320px;
   padding: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .app {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.title {
+  position: relative;
+  font-size: 34px;
+  margin-top: 0;
+  @media screen and (min-width: 480px) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
+}
+
+.title::before {
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--hover-color);
+  position: absolute;
+  top: 110%;
+  content: ' ';
 }
 
 .content {
   position: relative;
   overflow: hidden;
   background-color: var(--section-color);
-  max-width: 810px;
-  width: 810px;
   padding: 20px;
   padding-top: 50px;
   border-radius: 10px;
+  max-width: 320px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 810px;
+  }
 }

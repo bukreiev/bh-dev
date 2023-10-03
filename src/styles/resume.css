@@ -1,10 +1,8 @@
-.title {
-  position: relative;
-  font-size: 40px;
-  margin-top: 0;
-}
 .section {
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 810px;
+  }
 }
 .section__title {
   font-size: 22px;
@@ -109,16 +107,28 @@
 .skills__container {
   padding: 10px 0;
   overflow: hidden;
+  @media screen and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 250px;
+    overflow: scroll;
+    padding: 10px;
+  }
 }
 
 .skills__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-bottom: 10px;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 }
 
 .skills__list:nth-child(odd) {
@@ -158,6 +168,7 @@
   );
   box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   text-align: center;
+  transition: scale var(--transition);
 }
 
 .skills__item:hover,
