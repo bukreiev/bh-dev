@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About.jsx';
 import Resume from './components/Resume.jsx';
 import Portfolio from './components/Portfolio.jsx';
+import Contact from './components/Contact.jsx';
+// import Blog from './components/Blog.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,6 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="about" element={<About />} />
           <Route path="resume" element={<Resume />} />
           <Route path="portfolio" element={<Portfolio />} />
+          {/* <Route path="blog" element={<Blog />} /> */}
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>

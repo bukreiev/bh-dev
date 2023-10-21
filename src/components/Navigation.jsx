@@ -19,13 +19,13 @@ export default function Navigation() {
             Portfolio
           </Link>
         </li>
-        <li>
-          <Link className="nav__link" to="">
+        {/* <li>
+          <Link className="nav__link" to="/blog">
             Blog
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link className="nav__link" to="">
+          <Link className="nav__link" to="/contact">
             Contact
           </Link>
         </li>

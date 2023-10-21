@@ -4,7 +4,7 @@
 @import url(./styles/resume.css);
 @import url(./styles/portfolio.css);
 /* @import url(./styles/blog.css); */
-/* @import url(./styles/contact.css); */
+@import url(./styles/contact.css);
 
 :root {
   font-family: 'Montserrat', sans-serif;

@@ -7,16 +7,17 @@ export default function About() {
       <h1 className="title">About me</h1>
       <div className="about">
         <p className="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-          maiores similique minus quidem voluptatem impedit deleniti illum natus
-          adipisci totam. Eaque praesentium ipsa laboriosam obcaecati quod sed
-          aspernatur enim voluptatibus?
+          I am highly motivated and dedicated junior fullstack JavaScript
+          developer seeking an opportunity to utilize my skills and contribute
+          to the success of a dynamic tech company. With a strong foundation in
+          both front-end and back-end development, I am eager to gain real-world
+          experience and actively contribute to the growth of innovative
+          projects.
         </p>
         <p className="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-          maiores similique minus quidem voluptatem impedit deleniti illum natus
-          adipisci totam. Eaque praesentium ipsa laboriosam obcaecati quod sed
-          aspernatur enim voluptatibus?
+          Committed to continuously learning and staying updated with the latest
+          trends in technology. Excellent problem-solving abilities with a
+          strong attention to detail.
         </p>
       </div>
       <div className="directions">
