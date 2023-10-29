@@ -3,6 +3,7 @@
 @import url(./styles/about.css);
 @import url(./styles/resume.css);
 @import url(./styles/portfolio.css);
+@import url(./styles/modal.css);
 /* @import url(./styles/blog.css); */
 @import url(./styles/contact.css);
 
@@ -15,6 +16,7 @@
 
   --background-color: #242424;
   --background-color-light: #ffffff;
+  --backdrop: rgba(53, 53, 53, 0.544);
   --font-color: #ffffff;
   --font-color-light: #242424;
   --section-color: #323232;
@@ -42,6 +44,12 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: var(--font-color);
+  transition: color var(--transition);
+}
+
+a:hover,
+a:focus {
+  color: var(--hover-color);
 }
 
 button {

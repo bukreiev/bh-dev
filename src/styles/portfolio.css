@@ -19,7 +19,7 @@
 
 .projects__item {
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 5px;
   border-radius: 8px;
   overflow: hidden;
   transition: scale var(--transition);
