@@ -118,20 +118,20 @@ export default function Portfolio() {
               <p className="modal__text">{selectedCard.desription}</p>
               <a className="modal__link" href={selectedCard.link}>
                 <svg className="link__icon">
-                  <use href={live} width={35} height={35}></use>
+                  <use href={live} width={30} height={30}></use>
                 </svg>
                 {selectedCard.title} (Live page)
               </a>
               <a className="modal__git" href={selectedCard.git}>
                 <svg className="link__icon">
-                  <use href={github} width={35} height={35}></use>
+                  <use href={github} width={30} height={30}></use>
                 </svg>
                 Project code on GitHub
               </a>
               {selectedCard.backend ? (
                 <a className="modal__backend" href={selectedCard.backend}>
                   <svg className="link__icon">
-                    <use href={github} width={35} height={35}></use>
+                    <use href={github} width={30} height={30}></use>
                   </svg>
                   Project code on GitHub (Backend)
                 </a>

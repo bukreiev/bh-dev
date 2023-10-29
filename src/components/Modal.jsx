@@ -19,7 +19,7 @@ export default function Modal({ active, setActive, children }) {
             onClick={() => setActive(false)}
           >
             <svg className="close__icon">
-              <use href={close} width={35} height={35}></use>
+              <use href={close} width={20} height={20}></use>
             </svg>
           </button>
         </div>
