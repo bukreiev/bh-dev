@@ -19,22 +19,21 @@
   content: '';
   position: absolute;
   width: 4px;
-  background-color: var(--frame-color);
+  background-color: var(--line-color);
   top: 0;
   bottom: 0;
   left: 5%;
   margin-left: -3px;
 }
 
-/* Container around content */
 .timeline__container {
-  padding: 5px 40px;
+  padding: 5px 0;
+  padding-left: 40px;
   position: relative;
   background-color: inherit;
   width: 80%;
 }
 
-/* The circles on the timeline */
 .timeline__container::after {
   content: '';
   position: absolute;
@@ -52,7 +51,6 @@
   left: 5%;
 }
 
-/* Add arrows to the right container (pointing left) */
 .right::before {
   content: ' ';
   height: 0;
@@ -61,12 +59,11 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid rgb(0, 0, 0);
+  border: medium solid var(--border-color);
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--frame-color) transparent transparent;
+  border-color: transparent var(--border-color) transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
   left: -10px;
 }
@@ -77,14 +74,7 @@
   position: relative;
   border-radius: 8px;
   color: var(--font-color);
-  border: 2px solid var(--frame-color);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
-  );
-  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  border: 1px solid var(--border-color);
 }
 
 .timeline__title {
@@ -102,76 +92,4 @@
 
 .timeline__text {
   margin: 0;
-}
-
-.skills__container {
-  padding: 10px 0;
-  overflow: hidden;
-  @media screen and (max-width: 1199px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 250px;
-    overflow: scroll;
-    padding: 10px;
-  }
-}
-
-.skills__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 10px;
-
-  @media screen and (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-}
-
-.skills__list:nth-child(odd) {
-  animation-name: slideone;
-}
-.skills__list:nth-child(even) {
-  animation-name: slidetwo;
-}
-.skills__list:last-child {
-  margin-bottom: 0;
-}
-@keyframes slideone {
-  from {
-    margin-left: 5%;
-  }
-  to {
-    margin-right: 5%;
-  }
-}
-@keyframes slidetwo {
-  from {
-    margin-right: 5%;
-  }
-  to {
-    margin-left: 5%;
-  }
-}
-
-.skills__item {
-  padding: 5px;
-  border: 2px solid var(--frame-color);
-  border-radius: 8px;
-  background: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
-  );
-  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  text-align: center;
-  transition: scale var(--transition);
-}
-
-.skills__item:hover,
-.skills__item:focus {
-  scale: 1.1;
 }

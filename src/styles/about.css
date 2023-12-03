@@ -1,7 +1,18 @@
 /* About */
+.section {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 810px;
+  }
+}
+.section__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
 
 .about {
   margin-bottom: 20px;
+  max-width: 810px;
 }
 
 .text {
@@ -17,7 +28,8 @@
 /* What I do */
 
 .directions {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  max-width: 810px;
 }
 
 .directions__title {
@@ -27,28 +39,23 @@
 }
 
 .directions__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }
 
 .directions__list li {
-  border: 2px solid var(--frame-color);
-  border-radius: 8px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
-  );
-  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  /* border: 2px solid var(--border-color); */
+  /* border-radius: 8px; */
+  background-color: transparent;
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .directions__icon {
   min-width: 50px;
@@ -69,12 +76,40 @@
   font-size: 14px;
 }
 
-.reviews {
-  margin-bottom: 0;
+.skills__container {
+  @media screen and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 250px;
+    overflow: scroll;
+    padding: 10px;
+  }
 }
 
-.reviews__title {
-  font-size: 22px;
-  margin-top: 0;
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+.skills__item {
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--frame-color);
+  text-align: center;
+  transition: scale var(--transition);
+}
+
+.skills__item:hover,
+.skills__item:focus {
+  scale: 1.04;
 }

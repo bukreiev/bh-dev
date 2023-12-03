@@ -22,7 +22,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background-color: var(--frame-color);
+  background-color: var(--background-color);
   box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   border-radius: 8px;
   padding: 40px 20px;

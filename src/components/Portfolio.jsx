@@ -116,13 +116,17 @@ export default function Portfolio() {
             <div className="modal__container">
               <h2 className="modal__title">{selectedCard.title}</h2>
               <p className="modal__text">{selectedCard.desription}</p>
-              <a className="modal__link" href={selectedCard.link}>
+              <a
+                className="modal__link"
+                href={selectedCard.link}
+                target="blank"
+              >
                 <svg className="link__icon">
                   <use href={live} width={30} height={30}></use>
                 </svg>
                 {selectedCard.title} (Live page)
               </a>
-              <a className="modal__git" href={selectedCard.git}>
+              <a className="modal__git" href={selectedCard.git} target="blank">
                 <svg className="link__icon">
                   <use href={github} width={30} height={30}></use>
                 </svg>

@@ -26,8 +26,7 @@
 }
 .projects__item:hover,
 .projects__item:focus {
-  scale: 1.05;
-  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  scale: 1.03;
 }
 
 .projects__link {

@@ -1,7 +1,6 @@
 import avatar from '../assets/happy-mem.png';
 import mail from '../assets/icons.svg#mail';
 import phone from '../assets/icons.svg#phone';
-import calendar from '../assets/icons.svg#calendar';
 import location from '../assets/icons.svg#location';
 import github from '../assets/icons.svg#github';
 import linkedin from '../assets/icons.svg#linkedin';
@@ -42,21 +41,6 @@ export default function Sidebar() {
               <a className="contacts__link" href="tel:+380637432666">
                 +38 063 743 26 66
               </a>
-            </div>
-          </li>
-          <li>
-            <svg className="contacts__icon">
-              <use
-                href={calendar}
-                width={25}
-                height={25}
-                x={12.5}
-                y={12.5}
-              ></use>
-            </svg>
-            <div>
-              <p className="contacts__label">BIRTHDAY</p>
-              <p className="contacts__text">22 July 1995</p>
             </div>
           </li>
           <li>

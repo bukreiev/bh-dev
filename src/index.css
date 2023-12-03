@@ -14,26 +14,27 @@
   font-weight: 400;
   box-sizing: border-box;
 
-  --background-color: #242424;
-  --background-color-light: #ffffff;
+  --background-color: #dcdcdc;
+  --sidebar-color: #f4f4f4;
+  --content-color: #f4f4f4;
   --backdrop: rgba(53, 53, 53, 0.544);
-  --font-color: #ffffff;
-  --font-color-light: #242424;
-  --section-color: #323232;
-  --frame-color: #505050;
+  --font-color: #2a2a2a;
+  --line-color: rgba(58, 58, 58, 0.258);
+  --border-color: rgba(43, 43, 43, 0.445);
+  --frame-color: rgba(230, 230, 230, 0.296);
+  --hover-color: #7eb44f;
+  --button-hover: #92cf5d;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --hover-color: #7ba05b;
 
-  color-scheme: light dark;
   color: var(--font-color);
   background-color: var(--background-color);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 ul,
 li {
   list-style: none;
@@ -57,9 +58,6 @@ button {
   cursor: pointer;
 }
 
-/* #242424 */
-/* #575757 */
-
 body {
   margin: 0;
   display: flex;
@@ -68,43 +66,25 @@ body {
   min-height: 100vh;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--font-color-light);
-    background-color: var(--background-color-light);
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 .container {
   max-width: 320px;
-  padding: 15px;
+  padding: 10px 0;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
     flex-direction: row;
+    gap: 10px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    gap: 10px;
   }
 }
 
@@ -135,22 +115,26 @@ body {
 }
 
 .content {
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  background-color: var(--section-color);
-  padding: 20px;
+  background-color: var(--content-color);
+  padding: 20px 15px;
   padding-top: 50px;
   border-radius: 10px;
   max-width: 320px;
+  min-height: 100vh;
+  width: 100%;
 
   @media screen and (min-width: 480px) {
+    min-width: 480px;
     max-width: 480px;
   }
-
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    min-width: 428px;
+    max-width: 428px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 810px;
+    max-width: 830px;
   }
 }
