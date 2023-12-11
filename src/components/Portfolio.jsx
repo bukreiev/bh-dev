@@ -133,7 +133,11 @@ export default function Portfolio() {
                 Project code on GitHub
               </a>
               {selectedCard.backend ? (
-                <a className="modal__backend" href={selectedCard.backend}>
+                <a
+                  className="modal__backend"
+                  href={selectedCard.backend}
+                  target="blank"
+                >
                   <svg className="link__icon">
                     <use href={github} width={30} height={30}></use>
                   </svg>

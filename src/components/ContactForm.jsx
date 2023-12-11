@@ -5,10 +5,10 @@ export default function ContactForm() {
   const handleSubmit = async values => {
     try {
       const response = await axios.post(
-        'https://github.com/bukreiev/bh-serv',
+        'https://bh-serv-3a73c9528832.herokuapp.com/send-email',
         values
       );
-      console.log(response.data); // Выводим ответ сервера в консоль
+      console.log(response.data);
     } catch (error) {
       console.error('Ошибка при отправке данных:', error);
     }
@@ -19,7 +19,7 @@ export default function ContactForm() {
       <Formik
         className="form_section"
         initialValues={{ name: '', email: '', message: '' }}
-        onSubmit={values => handleSubmit(values)} // Вызываем функцию handleSubmit при отправке формы
+        onSubmit={values => handleSubmit(values)}
       >
         <Form className="form">
           <Field
