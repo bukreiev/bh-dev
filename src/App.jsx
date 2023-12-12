@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import About from './components/About.jsx';
-import Resume from './components/Resume.jsx';
-import Portfolio from './components/Portfolio.jsx';
-import Contact from './components/Contact.jsx';
-import NotFound from './components/NotFound.jsx';
+import About from './pages/About.jsx';
+import Resume from './pages/Resume.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import Contact from './pages/Contact.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
   return (

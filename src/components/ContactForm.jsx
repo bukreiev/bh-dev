@@ -4,10 +4,15 @@ import axios from 'axios';
 export default function ContactForm() {
   const handleSubmit = async values => {
     try {
-      const response = await axios.post(
-        'https://bh-serv-3a73c9528832.herokuapp.com/send-email',
-        values
-      );
+      // const response = await axios.post(
+      //   'https://bh-serv-3a73c9528832.herokuapp.com/send-email',
+      //   values
+      // );
+      // const response = await axios.post(
+      //   'http://localhost:8888/send-email',
+      //   values
+      // );
+      const response = await axios.post('https://bh-serv.onrender.com', values);
       console.log(response.data);
     } catch (error) {
       console.error('Ошибка при отправке данных:', error);
@@ -34,13 +39,13 @@ export default function ContactForm() {
             name="email"
             placeholder="J.Brooklin@gmail.com"
           />
-          <textarea
-            className="form__field"
+          <Field
+            className="textarea"
             id="message"
             name="message"
             placeholder="Leave your message here"
-            type="textarea"
-          ></textarea>
+            as="textarea"
+          />
           <button className="submit" type="submit">
             Send
           </button>

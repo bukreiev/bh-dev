@@ -4,7 +4,7 @@ import webstudio from '../assets/webstudio.png';
 import icecream from '../assets/icecream.png';
 import filmoteka from '../assets/filmoteka.png';
 import taskpro from '../assets/taskpro.png';
-import Modal from './Modal';
+import Modal from '../components/Modal';
 
 import github from '../assets/icons.svg#github';
 import live from '../assets/icons.svg#earth';
