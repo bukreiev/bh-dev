@@ -4,9 +4,9 @@
 @import url(./styles/resume.css);
 @import url(./styles/portfolio.css);
 @import url(./styles/modal.css);
-/* @import url(./styles/blog.css); */
 @import url(./styles/contact.css);
 @import url(./styles/contactForm.css);
+@import url(./styles/notFound.css);
 
 :root {
   font-family: 'Montserrat', sans-serif;
@@ -136,6 +136,8 @@ body {
     max-width: 428px;
   }
   @media screen and (min-width: 1200px) {
+    min-width: 830px;
+
     max-width: 830px;
   }
 }

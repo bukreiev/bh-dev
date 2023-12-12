@@ -1,0 +1,41 @@
+.err {
+  padding: 10px;
+}
+
+.err__title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.err__text {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.err__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.err__link {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.err__link:hover,
+.err__link:focus {
+  border-color: var(--hover-color);
+}
